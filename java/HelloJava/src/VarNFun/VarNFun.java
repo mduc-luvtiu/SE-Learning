@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class VarNFun {
     public static void main(String[] args) {
         // playWithVariables();
@@ -5,7 +7,36 @@ public class VarNFun {
         // playWithDoubles();
         // playWithCharacters();
         // playWithBooleans();
-        printIntegerList();
+        // printIntegerList();
+        // printIntegerList(10); 
+
+        int n = getAPositiveInteger();
+        System.out.println("Your number: " + n);
+        printIntegerList(n); // truyền tham trị, pass by value 
+                            // OOP: pass by reference - truyền tham chiếu
+    }
+
+    public static int getAPositiveInteger() {
+        int n;
+        // Nhập từ bàn phím, xài OOP
+        Scanner banPhimCuaTui = new Scanner(System.in);
+
+        System.out.print("Input a positive integer: ");
+        n = banPhimCuaTui.nextInt();
+
+        return n;
+    }
+
+    // nâng cấp: in n số tự nhiên tính từ 1
+    // Class bất kì chứ nhiều hàm trùng tên nhưng khác phần tham số đầu vào (khác trên data type không phải tên)
+    // Gọi là OVERLOAD / OVERLOADING: quá tải hàm
+    // vs. OVERRIDE
+    // POLYMORPHISM : Tính đa hình
+    public static void printIntegerList(int n) {
+        System.out.println("The list of " + n + " first integer");
+        for (int i = 0; i <= n; i++) {
+            System.out.print(i + " ");
+        }
     }
 
     // In ra các số tự nhiên từ 1 đến 100 
