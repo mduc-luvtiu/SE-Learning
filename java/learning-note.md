@@ -86,7 +86,7 @@ Cài theo thứ tự:
 - Tính đóng gói của thông tin, hành động.
 - Hàm và biến phải đi kèm với nhau và đại diện, mô tả cho một object, thực thể. 
 - Các class đại diện cho sự đóng gói thông tin để mô tả cho một nhóm object, và mỗi object lại được đại diện bởi thông tin của nó trong class đó. 
-- Hiển thị các thông tin cần thiết ra ngoài (`public`), không cho truy cập các thông tin bảo mật (`private`)
+- Dữ liệu không được cho phép truy cập trực tiếp từ bên ngoài, phải thông qua các cửa (`getInfo()`, `setInfo()`,...).
 
 ### 2. 
 
