@@ -91,3 +91,13 @@ Cài theo thứ tự:
 ### 2. 
 
 ## VI. Lưu trữ Object trong RAM
+### 1. Code segment
+- Lưu trữ thông tin class 
+
+### 2. Heap segment 
+- Lưu trữ thông tin các object
+- Khi lệnh tạo mới `new` sẽ đọc tới vùng code segment, sau đó lưu data vào heap segment.
+
+### 3. Stack segment
+- Lưu trữ thông tin tên object (đây là một con trỏ), nó trỏ tới cùng nhớ heap để lấy thông tin object. 
+- Trong bước tạo object, sẽ lưu tên biến vào stack segment
