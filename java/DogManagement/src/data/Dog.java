@@ -38,6 +38,15 @@ public class Dog {
     public void setNewWeight(double newWeight) {
         weight = newWeight; 
     }
+
+    @Override
+    public String toString() {
+        // return "Dog [name=" + name + ", yob=" + yob + ", weight=" + weight + ", getYob()=" + getYob() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]"; 
+        // Được phép thay đổi, chỉ cần đảm bảo kiểu trả về 
+        return String.format("|GOGO|%-10s|%4d|%4.1f|", name, yob, weight);
+    }
+
+    
 }
 
 // KHÔNG VIẾT CODE CỦA CLASS Ở BÊN NGOÀI CLASS

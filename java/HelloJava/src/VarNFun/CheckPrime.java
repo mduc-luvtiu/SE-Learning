@@ -17,9 +17,8 @@ public class CheckPrime {
 
     public static boolean isPrime(int n) {
         if (n <= 1) return false;
-        int a = (int)Math.sqrt(n); // Ép kiểu
-        for (int i = 2; i < a; i++) {
-            if (n % a == 0) {
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (n % i == 0) {
                 return false;
             }
         }
